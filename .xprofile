@@ -7,9 +7,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 setxkbmap es
 xset -dpms && xset s off
 xset r rate 210 40
-xrandr --newmode "1920x1080_72.00"  210.25  1920 2056 2256 2592  1080 1083 1088 1128 -hsync +vsync
-xrandr --addmode HDMI-1 "1920x1080_72.00"
-xrandr --output HDMI-1 --mode "1920x1080_72.00"
+xrandr --newmode "72Hz"  210.25  1920 2056 2256 2592  1080 1083 1088 1128 -hsync +vsync
+xrandr --addmode HDMI-A-0 "72Hz"
+xrandr --output HDMI-A-0 --mode "72Hz"
 xinput set-prop 'Logitech G Pro Gaming Mouse' 'libinput Accel Speed' -0.7
 xinput set-prop 'Logitech G Pro Gaming Mouse' 'libinput Accel Profile Enabled' 0 0
 lxsession &
