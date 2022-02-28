@@ -92,8 +92,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
     # Screenshot
-    ([mod], "s", lazy.spawn("scrot '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures/shots/'")),
-    ([mod, "shift"], "s", lazy.spawn("scrot -s '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures/shots/'")),
+    ([mod], "s", lazy.spawn(
+        "scrot '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures/shots/'")),
+    ([mod, "shift"], "s", lazy.spawn(
+        "scrot -s '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures/shots/'")),
 
     # Visual Studio Code
     ([mod], "v", lazy.spawn("code")),
@@ -312,7 +314,8 @@ layouts = [
     #    split=False,
     # ),
     layout.MonadTall(**layout_theme),
-    layout.RatioTile(**layout_theme),
+    layout.MonadTall(**layout_theme, align=1),
+    # layout.RatioTile(**layout_theme),
     # layout.VerticalTile(**layout_theme),
     # layout.Matrix(**layout_theme, columns=3),
     # CustomZoomy(**layout_theme),
@@ -329,10 +332,10 @@ layouts = [
     #    section_fontsize=18,
     #    section_fg=colors[1],
     # ),
-    layout.Max(**layout_theme),
+    # layout.Max(**layout_theme),
     # layout.Tile(shift_windows=True, **layout_theme),
-    #layout.Floating(**layout_theme),
-    #CustomBspMargins(**layout_theme_margins),
+    # layout.Floating(**layout_theme),
+    # CustomBspMargins(**layout_theme_margins),
 ]
 
 # Setup bar
