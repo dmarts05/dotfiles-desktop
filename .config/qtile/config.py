@@ -306,10 +306,10 @@ layouts = [
     # ),
     layout.MonadTall(**layout_theme),
     layout.MonadTall(**layout_theme, align=1),
-    # layout.RatioTile(**layout_theme),
+    layout.RatioTile(**layout_theme),
     # layout.VerticalTile(**layout_theme),
     # layout.Matrix(**layout_theme, columns=3),
-    # CustomZoomy(**layout_theme),
+    CustomZoomy(**layout_theme),
     # layout.Slice(**layout_theme),
     # layout.TreeTab(
     #    **layout_theme,
