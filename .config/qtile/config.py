@@ -73,7 +73,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "x", lazy.spawn("./.config/rofi/powermenu/powermenu.sh")),
 
     # Browser
-    ([mod], "b", lazy.spawn("chromium")),
+    ([mod], "b", lazy.spawn("firefox")),
 
     # File Explorer
     ([mod], "e", lazy.spawn("thunar")),
